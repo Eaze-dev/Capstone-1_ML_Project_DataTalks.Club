@@ -88,3 +88,31 @@ docker build -t my-streamlit-app .
 docker run -p 8501:8501 my-streamlit-app
 
 ```
+
+## 📊 Dataset Features
+Dataset Link: https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance
+
+Main features used for prediction:
+
+- Hours_Studied
+- Sleep_Hours
+- Previous_Scores
+- Extracurricular_Activities (categorical)
+- Attendance_Percentage
+- (and other available student background variables)
+
+Target: **Exam_Score** (continuous)
+
+## 🛠 Project Structure
+
+```text
+├── Data/
+│   └── student_habits_performance.csv       ← original dataset
+├── models/
+│   └── best_model.pkl                       ← best trained model
+├── notebook.ipynb                           ← full EDA + model training
+├── Images                                   ← Streamlit UI Image
+├── app.py                                   ← Streamlit web application
+├── requirements.txt                         ← Python dependencies
+├── Dockerfile                               ← Docker configuration
+└── README.md
